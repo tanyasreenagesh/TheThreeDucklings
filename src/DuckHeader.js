@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 import "./Duck.css";
 
 const menus = [
@@ -17,7 +16,8 @@ const DuckHeader = () => {
       <h1 className="TeamName">{teamName}</h1>
       <div className="MainMenu">
         {menus.map((menu) => (
-          <a className="MenuItem" href="" key={menu.item}>
+          // eslint-disable-next-line
+          <a className="MenuItem" key={menu.item}>
             {menu.item}
           </a>
         ))}
